@@ -1,0 +1,7 @@
+/node_modules
+.ruby-gemset
+.ruby-version
+/app/bower_components
+/app/styles/sass
+/app/templates/slim
+/dist

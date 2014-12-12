@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="App">
+  <head>
+    <title>Front End</title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+    <!--build:css styles/appication.min.css-->
+    <link href="bower_components/animate.css/animate.css" rel="stylesheet" />
+    <link href="bower_components/normalize.css/normalize.css" rel="stylesheet" />
+    <link href="styles/base.css" rel="stylesheet" />
+    <!--endbuild-->
+  </head>
+  <body>
+    <main ng-controller="MainCtrl">
+      <h3>
+        {{ name }}
+      </h3>
+      <h4 ui-view=""></h4>
+    </main><!--build:js scripts/application.min.js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/filters.js"></script>
+    <!--endbuild-->
+  </body>
+</html>
