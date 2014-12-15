@@ -1,0 +1,110 @@
+%col-extend{
+  min-height: 1px;
+  height: 100%;
+  position: relative;
+  float: left;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+}
+
+.container{
+  max-width: $max-width;
+  width: 100%;
+  margin: 0px auto;
+  @extend %clearfix;
+}
+
+.row{
+  @extend %clearfix;
+}
+
+.col-1-1, .col-4-4{
+  width: 100%;
+  @extend %col-extend;
+}
+.col-1-2, .col-2-4{
+  width: 50%;
+  @extend %col-extend;
+}
+.col-1-3{
+  width: 100%/3;
+  @extend %col-extend;
+}
+.col-1-4{
+  width: 25%;
+  @extend %col-extend;
+}
+.col-3-4{
+  width: 75%;
+  @extend %col-extend;
+}
+
+// For mobile -> 480px default cols 8
+@include breakpoint(mobile) {
+
+  @for $i from 1 through $mobile-columns{
+    .col-#{$i}-#{$mobile-columns}{
+      width: percentage(( $i / $mobile-columns));
+      @extend %col-extend;
+    };
+  };
+
+}
+
+// For >= 481px default cols 12
+@include breakpoint(mobile-landscape) {
+
+  @for $i from 1 through $mobile-columns{
+    .col-#{$i}-#{$mobile-columns}{
+      width: percentage(( $i / $mobile-landscape-columns));
+      @extend %col-extend;
+    };
+  };
+
+  @for $i from 1 through $mobile-landscape-columns{
+    .mobile-landscape-col-#{$i}-#{$mobile-landscape-columns}{
+      width: percentage(( $i / $mobile-landscape-columns));
+      @extend %col-extend;
+    };
+  };
+
+}
+
+// For >= 768px default cols 12
+@include breakpoint(tablet-portrait) {
+
+  @for $i from 1 through $tablet-portrait-columns{
+    .tablet-portrait-col-#{$i}-#{$tablet-portrait-columns}{
+      width: percentage(( $i / $tablet-portrait-columns));
+      @extend %col-extend;
+    };
+  };
+
+  // push
+  @for $i from 1 through $tablet-portrait-columns{
+    .push-tablet-portrait-col-#{$i}-#{$tablet-portrait-columns}{
+      right: percentage(( $i / $tablet-portrait-columns));
+      @extend %col-extend;
+    };
+  };
+
+  //pull
+  @for $i from 1 through $tablet-portrait-columns{
+    .pull-tablet-portrait-col-#{$i}-#{$tablet-portrait-columns}{
+      left: percentage(( $i / $tablet-portrait-columns));
+      @extend %col-extend;
+    };
+  };
+}
+
+// For >= 1024px default cols 24
+@include breakpoint(tablet-landscape) {
+
+  @for $i from 1 through $tablet-landscape-columns{
+    .tablet-landscape-col-#{$i}-#{$tablet-landscape-columns}{
+      width: percentage(( $i / $tablet-landscape-columns));
+      @extend %col-extend;
+    };
+  };
+
+}

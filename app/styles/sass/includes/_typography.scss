@@ -1,0 +1,36 @@
+@font-face {
+  font-family: '';
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.7s ease-in-out;
+  color: $base-link-color;
+  &:hover{ color: $hover-link-color; };
+}
+
+img, picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

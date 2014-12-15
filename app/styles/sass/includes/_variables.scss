@@ -1,0 +1,20 @@
+// Global
+$base-font-family: '', sans-serif;
+$base-font-size: 1em;
+$base-line-height: 1.5;
+$icons-font-family: '';
+
+//Default colors
+$base-link-color: black;
+$hover-link-color: black;
+$border-line-color: black;
+
+
+// Grid
+$default-columns: 12;
+$tablet-landscape-columns: 24;
+$tablet-portrait-columns: $default-columns;
+$mobile-landscape-columns: $default-columns;
+$mobile-columns: 8;
+$gutter: 10px;
+$max-width: 1200px;
