@@ -1,5 +1,5 @@
 @mixin breakpoint($point) {
-  // 1280px
+  // >= 1280px
   @if $point == desktop {
     @media (min-width: 1280px) { @content ; width: 80%; }
   }
@@ -27,7 +27,7 @@
 }
 
 %clearfix {
-  &:before{
+  &:before {
     content: '';
     display: table;
   }

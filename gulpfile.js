@@ -27,11 +27,11 @@ gulp.task('slim-index', function(){
 
 gulp.task('sass', function () {
     gulp.src(path.styles + '/sass/**/*.scss')
-        .pipe(plugins.autoprefixer())
         .pipe(plugins.sass({
             errLogToConsole: true,
             sourceComments : 'normal'
         }))
+        .pipe(plugins.autoprefixer())
         .pipe(gulp.dest(path.styles));
 });
 

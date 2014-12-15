@@ -1,0 +1,441 @@
+/* line 30, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/breakpoints */
+.container:before, .row:before {
+  content: '';
+  display: table; }
+/* line 34, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/breakpoints */
+.container:after, .row:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/* line 1, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+.col-1-1, .col-4-4, .col-1-2, .col-2-4, .col-1-3, .col-1-4, .col-3-4, .col-1-8, .col-2-8, .col-3-8, .col-4-8, .col-5-8, .col-6-8, .col-7-8, .col-8-8, .mobile-landscape-col-1-12, .mobile-landscape-col-2-12, .mobile-landscape-col-3-12, .mobile-landscape-col-4-12, .mobile-landscape-col-5-12, .mobile-landscape-col-6-12, .mobile-landscape-col-7-12, .mobile-landscape-col-8-12, .mobile-landscape-col-9-12, .mobile-landscape-col-10-12, .mobile-landscape-col-11-12, .mobile-landscape-col-12-12, .tablet-portrait-col-1-12, .tablet-portrait-col-2-12, .tablet-portrait-col-3-12, .tablet-portrait-col-4-12, .tablet-portrait-col-5-12, .tablet-portrait-col-6-12, .tablet-portrait-col-7-12, .tablet-portrait-col-8-12, .tablet-portrait-col-9-12, .tablet-portrait-col-10-12, .tablet-portrait-col-11-12, .tablet-portrait-col-12-12, .push-tablet-portrait-col-1-12, .push-tablet-portrait-col-2-12, .push-tablet-portrait-col-3-12, .push-tablet-portrait-col-4-12, .push-tablet-portrait-col-5-12, .push-tablet-portrait-col-6-12, .push-tablet-portrait-col-7-12, .push-tablet-portrait-col-8-12, .push-tablet-portrait-col-9-12, .push-tablet-portrait-col-10-12, .push-tablet-portrait-col-11-12, .push-tablet-portrait-col-12-12, .pull-tablet-portrait-col-1-12, .pull-tablet-portrait-col-2-12, .pull-tablet-portrait-col-3-12, .pull-tablet-portrait-col-4-12, .pull-tablet-portrait-col-5-12, .pull-tablet-portrait-col-6-12, .pull-tablet-portrait-col-7-12, .pull-tablet-portrait-col-8-12, .pull-tablet-portrait-col-9-12, .pull-tablet-portrait-col-10-12, .pull-tablet-portrait-col-11-12, .pull-tablet-portrait-col-12-12, .tablet-landscape-col-1-24, .tablet-landscape-col-2-24, .tablet-landscape-col-3-24, .tablet-landscape-col-4-24, .tablet-landscape-col-5-24, .tablet-landscape-col-6-24, .tablet-landscape-col-7-24, .tablet-landscape-col-8-24, .tablet-landscape-col-9-24, .tablet-landscape-col-10-24, .tablet-landscape-col-11-24, .tablet-landscape-col-12-24, .tablet-landscape-col-13-24, .tablet-landscape-col-14-24, .tablet-landscape-col-15-24, .tablet-landscape-col-16-24, .tablet-landscape-col-17-24, .tablet-landscape-col-18-24, .tablet-landscape-col-19-24, .tablet-landscape-col-20-24, .tablet-landscape-col-21-24, .tablet-landscape-col-22-24, .tablet-landscape-col-23-24, .tablet-landscape-col-24-24 {
+  min-height: 1px;
+  height: 100%;
+  position: relative;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+/* line 10, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto; }
+
+/* line 21, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+.col-1-1, .col-4-4 {
+  width: 100%; }
+
+/* line 25, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+.col-1-2, .col-2-4 {
+  width: 50%; }
+
+/* line 29, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+.col-1-3 {
+  width: 100%/3; }
+
+/* line 33, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+.col-1-4 {
+  width: 25%; }
+
+/* line 37, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+.col-3-4 {
+  width: 75%; }
+
+@media (max-width: 480px) {
+  /* line 46, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-1-8 {
+    width: 12.5%; }
+
+  /* line 46, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-2-8 {
+    width: 25%; }
+
+  /* line 46, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-3-8 {
+    width: 37.5%; }
+
+  /* line 46, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-4-8 {
+    width: 50%; }
+
+  /* line 46, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-5-8 {
+    width: 62.5%; }
+
+  /* line 46, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-6-8 {
+    width: 75%; }
+
+  /* line 46, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-7-8 {
+    width: 87.5%; }
+
+  /* line 46, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-8-8 {
+    width: 100%; }
+ }
+
+@media (min-width: 481px) {
+  /* line 58, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-1-8 {
+    width: 8.33333%; }
+
+  /* line 58, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-2-8 {
+    width: 16.66667%; }
+
+  /* line 58, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-3-8 {
+    width: 25%; }
+
+  /* line 58, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-4-8 {
+    width: 33.33333%; }
+
+  /* line 58, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-5-8 {
+    width: 41.66667%; }
+
+  /* line 58, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-6-8 {
+    width: 50%; }
+
+  /* line 58, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-7-8 {
+    width: 58.33333%; }
+
+  /* line 58, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .col-8-8 {
+    width: 66.66667%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-1-12 {
+    width: 8.33333%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-2-12 {
+    width: 16.66667%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-3-12 {
+    width: 25%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-4-12 {
+    width: 33.33333%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-5-12 {
+    width: 41.66667%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-6-12 {
+    width: 50%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-7-12 {
+    width: 58.33333%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-8-12 {
+    width: 66.66667%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-9-12 {
+    width: 75%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-10-12 {
+    width: 83.33333%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-11-12 {
+    width: 91.66667%; }
+
+  /* line 65, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .mobile-landscape-col-12-12 {
+    width: 100%; }
+ }
+
+@media (min-width: 768px) {
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-1-12 {
+    width: 8.33333%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-2-12 {
+    width: 16.66667%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-3-12 {
+    width: 25%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-4-12 {
+    width: 33.33333%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-5-12 {
+    width: 41.66667%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-6-12 {
+    width: 50%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-7-12 {
+    width: 58.33333%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-8-12 {
+    width: 66.66667%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-9-12 {
+    width: 75%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-10-12 {
+    width: 83.33333%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-11-12 {
+    width: 91.66667%; }
+
+  /* line 77, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-portrait-col-12-12 {
+    width: 100%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-1-12 {
+    right: 8.33333%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-2-12 {
+    right: 16.66667%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-3-12 {
+    right: 25%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-4-12 {
+    right: 33.33333%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-5-12 {
+    right: 41.66667%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-6-12 {
+    right: 50%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-7-12 {
+    right: 58.33333%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-8-12 {
+    right: 66.66667%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-9-12 {
+    right: 75%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-10-12 {
+    right: 83.33333%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-11-12 {
+    right: 91.66667%; }
+
+  /* line 85, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .push-tablet-portrait-col-12-12 {
+    right: 100%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-1-12 {
+    left: 8.33333%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-2-12 {
+    left: 16.66667%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-3-12 {
+    left: 25%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-4-12 {
+    left: 33.33333%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-5-12 {
+    left: 41.66667%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-6-12 {
+    left: 50%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-7-12 {
+    left: 58.33333%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-8-12 {
+    left: 66.66667%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-9-12 {
+    left: 75%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-10-12 {
+    left: 83.33333%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-11-12 {
+    left: 91.66667%; }
+
+  /* line 93, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .pull-tablet-portrait-col-12-12 {
+    left: 100%; }
+ }
+
+@media (min-width: 1024px) {
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-1-24 {
+    width: 4.16667%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-2-24 {
+    width: 8.33333%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-3-24 {
+    width: 12.5%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-4-24 {
+    width: 16.66667%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-5-24 {
+    width: 20.83333%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-6-24 {
+    width: 25%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-7-24 {
+    width: 29.16667%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-8-24 {
+    width: 33.33333%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-9-24 {
+    width: 37.5%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-10-24 {
+    width: 41.66667%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-11-24 {
+    width: 45.83333%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-12-24 {
+    width: 50%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-13-24 {
+    width: 54.16667%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-14-24 {
+    width: 58.33333%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-15-24 {
+    width: 62.5%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-16-24 {
+    width: 66.66667%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-17-24 {
+    width: 70.83333%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-18-24 {
+    width: 75%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-19-24 {
+    width: 79.16667%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-20-24 {
+    width: 83.33333%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-21-24 {
+    width: 87.5%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-22-24 {
+    width: 91.66667%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-23-24 {
+    width: 95.83333%; }
+
+  /* line 104, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/grid */
+  .tablet-landscape-col-24-24 {
+    width: 100%; }
+ }
+
+@font-face {
+  font-family: '';
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 7, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/typography */
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+/* line 13, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/typography */
+body {
+  font-family: '', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  position: relative; }
+
+/* line 20, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/typography */
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.7s ease-in-out;
+          transition: all 0.7s ease-in-out;
+  color: black; }
+  /* line 24, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/typography */
+  a:hover {
+    color: black; }
+
+/* line 27, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/typography */
+img, picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 32, /Users/arturjanicki/Projects/My-Grid/app/styles/sass/includes/typography */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
